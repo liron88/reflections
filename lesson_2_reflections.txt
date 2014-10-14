@@ -1,0 +1,21 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+    A repository is initialized. That means there are no commits yet,
+	but only untracked files.
+	There's a need to do it because later we'll use that repository to
+	commit dependent files at once.
+	
+How is the staging area different from the working directory and the 
+repository? What value do you think it offers?
+
+	The staging area is a intermediate step used when preparing to commit.
+	Only those files that were added to the staging area from the working
+	directory will commit to the repository. It is different from the
+	working directory because it "knows" which files are to be committed (which
+	is not always all the files). It is different from the repository by the 
+	fact that it does contain information about the files in the working
+	directory (e.g. untracked files).
+	It offers the value of freedom the chose which files from the working
+	directory will be committed.
+
+	
