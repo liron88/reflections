@@ -1,0 +1,56 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+    It shows the difference between the two versions, marking which lines had
+	changed.
+
+How could having easy access to the entire history of a file make you a better
+programmer in the long term?
+
+    One can track a bug that was introduced to the program a few versions
+	earlier. There is a possibility to see when it was introduced and what
+	caused it (by comparing it to an earlier version).
+	One can also see how the program evolved - maybe the structure of the
+	program should have evolved differently. Learning this will allow for
+	developing better programs in the future.	
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+    
+    Pros: the ability to save changes in logical periods of time. This means
+	the code will actually be reasonable and most probably would compile.
+	Also the ability to mention what has changed is good for documentation.
+	Cons: sometimes forgetting to commit might lead to losing all changes.
+	Also forgetting to commit will yield a large change when remembering to
+	commit.
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+    Git is directly related to files containing code. These files are often
+	related to each other, and therefore changing one files requires a change
+	in another file.
+	This is not the case with most documents that contain easy, readable texts.
+	These documents tend to be independent from each other, and therefore there
+	is not need to save (i.e. commit) both files at once. This is the way that
+	Google Docs operates.
+
+How can you use the commands git log and git diff to view the history of files?
+    
+    Use git clone to copy an entire repository, including all its history.
+	Then use git log to view all the commits that were done in the past.
+	Pick a commit ID you want to check for what had changed. To compare it
+	with a different commit, type git diff -first id- -second id-.
+
+How might using version control make you more confident to make changes that
+could break something?
+    
+    Using the command git checkout, one can always return to a previous commit
+	and check what change had introduced a bug. This is done without affecting
+	commits that were done later. This feature allows making changes that could
+	break the program momentarily. There's always a way out - using checkout. 
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+    Building an application for Android smartphones.
