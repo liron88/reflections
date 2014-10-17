@@ -47,3 +47,17 @@ organized? How would branches help?
 	version of the project. A branch helps developing that feature completely
 	on its own, and only when it's ready, merge it into the final project.
 	
+How do the diagrams help you visualize the branch structure?
+
+	It helps too visualize what commits are found on which brances,
+	and which commits will be discarded if returning to an existing branch
+	(and the current commit isn't found on any branch).
+	
+	git checkout -b [branch name]
+	equals
+	git branch [branch name]
+	git checkout [branch name]
+	
+	this is useful one creating a new commit that is not found on any branch
+	just yet.
+	
