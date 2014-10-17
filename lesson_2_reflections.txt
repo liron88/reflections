@@ -1,5 +1,6 @@
 What happens when you initialize a repository? Why do you need to do it?
 
+	Use git init to initialize a new repository.
     A repository is initialized. That means there are no commits yet,
 	but only untracked files.
 	There's a need to do it because later we'll use that repository to
@@ -17,5 +18,32 @@ repository? What value do you think it offers?
 	directory (e.g. untracked files).
 	It offers the value of freedom the chose which files from the working
 	directory will be committed.
+	
+command						comparing commits that are found in
+------------------------	-----------------------------------
+git diff					working directory	staging area
+git diff --staged			staging area		commit1
+git diff commit1 commit2	commit1				commit2
 
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+	Using the command git status, one can see which files are in the staging
+	area and which files are untracked (files that are found only in the
+	working directory). Only those files that are in the staging area will
+	be committed. To commit per logical change, insert only the relevant
+	files for the logical change to the staging area (using the command
+	git add).
+	
+git branch shows all the brances that were created.
+a star next to a branch's name indicates that this is the current branch.
+git branch [branch name] creates a new branch called [branch name]
+git checkout [branch name] switches to a branch named [branch name]
+
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+	Testing out a new feature which may or may not make it to the final
+	version of the project. A branch helps developing that feature completely
+	on its own, and only when it's ready, merge it into the final project.
 	
