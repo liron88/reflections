@@ -61,3 +61,47 @@ How do the diagrams help you visualize the branch structure?
 	this is useful one creating a new commit that is not found on any branch
 	just yet.
 	
+	git show [commit] - diffs [commit] and its parent (without knowing the
+	parent id).
+	git branch -d [branch name] - deletes branch [branch name]. d means delete.
+	If this is done after [branch name] was merged into some other merge (say
+	master branch), the commits in [branch name] will be accessible through
+	git log in the master branch.
+	
+	git merge --abort - aborts merging and restore the files to the state
+	before the merge.
+	
+	git log --graph --oneline - shows a graph of the branches.
+	
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+	Merging two branches together incorporates the changes (including additions
+	and deletions) from both branches.
+	Representing it in the diagram is only for convenience making it easy to
+	follow on where (i.e. which commit) the branches were split and where they
+	had merged.
+	
+git merge master coins
+resolve conflict
+add game.js
+git status
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges
+manually?
+
+	Git's automatic merging is fast. The ability to work on small changes
+	separately and merge them into the final version "when it's ready" is a
+	powerful tool. The cons is that sometimes there are conflicts which
+	need to be resolved manually, as Git can't decide by itself.
+	This requires some time to decide on the best way to merge and keep
+	the requested changes only. Although Git helps tracking where are
+	the changes that are needed further examination by inserting lines with
+	instructions.
+	Always doing merges manually is only good for small applications. Where
+	there is a huge chunk of code, working on a feature might render the
+	program useless for a while (instead of making it a branch and merging
+	later). Moreover, this can insert bug/s. For example, if you wish to show
+	a demo of your program, you won't be able to do it in that case, unless
+	you manually remove all your changes of save a different unrelated copy
+	of your program in the first place.
