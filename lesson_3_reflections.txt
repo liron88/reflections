@@ -17,7 +17,11 @@ local?
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
-    Fill in your answer here
+    Other contributors might commit their changes while I'm working on my
+	changes on my computer. I don't want the code to change *while* I'm working
+	on it. For example, let's say someone is changing the exact same function
+	as I do. Only later would I like to compare our versions and pull his/her
+	version if it's better.	
 
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
