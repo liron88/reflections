@@ -82,11 +82,6 @@ the diagram the way we do?
 	follow on where (i.e. which commit) the branches were split and where they
 	had merged.
 	
-git merge master coins
-resolve conflict
-add game.js
-git status
-
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
 
