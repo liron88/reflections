@@ -1,4 +1,5 @@
-	git remote - see all current GitHub repositories (called remotes).
+	git remote - see all current GitHub repositories (their local name are
+	remotes).
 	git remote -v - some added information (from where is fetch done and to
 	where push is done).
 	git remote add origin [some URL of repository] - adds a repository in the
