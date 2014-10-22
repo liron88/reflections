@@ -42,9 +42,9 @@ git remote - see all current GitHub repositories (their local name are
 remotes).
 git remote -v - some added information (from where is fetch done and to
 where push is done).
-git remote add origin [some URL of repository] - adds a repository in the
-specified [URL]. This [URL] will be referred to as "origin". You can rename it
-to whatever you like.
+git remote add origin [some URL of repository] - adds a repository which exists
+in the specified [URL]. This [URL] will be referred to as "origin". You can
+rename it to whatever you like.
 git push [origin] [master] - pushes branch [master] into remote [origin].
 
 git fetch branch-name
