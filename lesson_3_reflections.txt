@@ -33,17 +33,29 @@ use one instead of another?
 	Forks are generally the same as clones, except that a fork is a clone of
 	one repository from GitHub to another repository *on GitHub*.
 
+	git fetch branch-name
+	
+	git pull master =	git fetch master
+						git merge master origin/master
+	
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    The ability to work offline and merge changes at your free time where no
+	internet connection is present.
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
-    Fill in your answer here
+    I would have to send the files back and forth through email or IM to the
+	other contributor and mention there what I like and what's needs to be
+	changed. This is much more annoying and harder.
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    It is less comfortable than pushing and pulling directly from master,
+	but it does add the powerful option of collaboration. If I changed the
+	master branch directly, other contributors will not be able to review the
+	changed that I've before they got incorporated into the master branch.
+	That way, they cannot add their own observations and ideas.

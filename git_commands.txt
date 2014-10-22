@@ -1,0 +1,58 @@
+Use git init to initialize a new repository.
+
+command						comparing commits that are found in
+------------------------	-----------------------------------
+git diff					working directory	staging area
+git diff --staged			staging area		commit1
+git diff commit1 commit2	commit1				commit2
+
+Using the command git status, one can see which files are in the staging
+area and which files are untracked (files that are found only in the
+working directory). Only those files that are in the staging area will
+be committed. To commit per logical change, insert only the relevant
+files for the logical change to the staging area (using the command
+git add).
+
+git branch shows all the branches that were created.
+a star next to a branch's name indicates that this is the current branch.
+git branch [branch name] creates a new branch called [branch name]
+git checkout [branch name] switches to a branch named [branch name]
+
+git checkout -b [branch name]
+equals
+git branch [branch name]
+git checkout [branch name]
+
+this is useful when creating a new commit that is not found on any branch
+just yet.
+	
+git show [commit] - diffs [commit] and its parent (without knowing the
+parent id).
+git branch -d [branch name] - deletes branch [branch name]. d means delete.
+If this is done after [branch name] was merged into some other merge (say
+master branch), the commits in [branch name] will be accessible through
+git log in the master branch.
+	
+git merge --abort - aborts merging and restore the files to the state
+before the merge.
+	
+git log --graph --oneline - shows a graph of the branches.
+
+git remote - see all current GitHub repositories (their local name are
+remotes).
+git remote -v - some added information (from where is fetch done and to
+where push is done).
+git remote add origin [some URL of repository] - adds a repository in the
+specified [URL]. This [URL] will be referred to as "origin". You can rename it
+to whatever you like.
+git push [origin] [master] - pushes branch [master] into remote [origin].
+
+git fetch branch-name
+	
+git pull master =	git fetch master
+					git merge master origin/master
+					
+git fetch branch-name
+	
+git pull master =	git fetch master
+					git merge master origin/master

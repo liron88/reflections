@@ -35,7 +35,7 @@ change?
 	files for the logical change to the staging area (using the command
 	git add).
 	
-git branch shows all the brances that were created.
+git branch shows all the branches that were created.
 a star next to a branch's name indicates that this is the current branch.
 git branch [branch name] creates a new branch called [branch name]
 git checkout [branch name] switches to a branch named [branch name]
@@ -58,7 +58,7 @@ How do the diagrams help you visualize the branch structure?
 	git branch [branch name]
 	git checkout [branch name]
 	
-	this is useful one creating a new commit that is not found on any branch
+	this is useful when creating a new commit that is not found on any branch
 	just yet.
 	
 	git show [commit] - diffs [commit] and its parent (without knowing the
