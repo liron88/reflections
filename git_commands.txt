@@ -51,4 +51,6 @@ git fetch branch-name
 	
 git pull origin master = 	git fetch master
 							git merge master origin/master
-					
+							
+git clone [URL] - clones a repository from the specified [URL] to the
+current folder.
