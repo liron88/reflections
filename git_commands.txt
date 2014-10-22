@@ -49,10 +49,6 @@ git push [origin] [master] - pushes branch [master] into remote [origin].
 
 git fetch branch-name
 	
-git pull master =	git fetch master
-					git merge master origin/master
+git pull origin master = 	git fetch master
+							git merge master origin/master
 					
-git fetch branch-name
-	
-git pull master =	git fetch master
-					git merge master origin/master
